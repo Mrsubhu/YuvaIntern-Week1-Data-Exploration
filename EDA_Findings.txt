@@ -1,0 +1,46 @@
+
+WEEK 1 - DATA EXPLORATION FINDINGS
+
+Dataset: UCI Online Retail
+
+1. DATASET OVERVIEW
+Total rows: 541909
+Total columns: 9
+
+2. DATA QUALITY
+Total missing values: 136534
+Duplicate rows: 5268
+
+3. MISSING VALUES BY COLUMN
+InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135080
+Country             0
+Revenue             0
+
+4. TRANSACTION CHECKS
+Negative quantities: 10624
+Zero quantities: 0
+Negative unit prices: 2
+Zero unit prices: 2515
+
+5. DATE RANGE
+Start date: 2010-12-01 08:26:00
+End date: 2011-12-09 12:50:00
+
+6. INITIAL OBSERVATIONS
+- CustomerID has substantial missing data.
+- Some transactions have negative quantities.
+- Some records have zero unit prices.
+- Duplicate rows require investigation.
+- Revenue calculations must consider returns and cancellations.
+
+7. LIMITATIONS
+- Missing customer identifiers can limit customer-level analysis.
+- Negative quantities need investigation before interpretation.
+- Duplicate records should be checked before removal.
+- Initial findings are exploratory and require further validation.
